@@ -183,9 +183,116 @@ Refresh kembali browser, sehingga akan ditampilkan hasilnya.
 ![ss34](https://user-images.githubusercontent.com/81814954/123483459-eb562e00-d630-11eb-8639-09357ed480fd.JPG)
 
 
-LANGKAH 5
+# LANGKAH 5
+
 Membuat Tampilan Detail Artikel
 Tampilan pada saat judul berita di klik maka akan diarahkan ke halaman yang berbeda. Tambahkan fungsi baru pada Controller Artikel dengan nama view().
+![ss32](https://user-images.githubusercontent.com/81814954/124261677-45884f00-db5b-11eb-8cc3-40391324eb03.JPG)
+
+
+# LANGKAH 6
+Membuat View Detail
+Buat view baru untuk halaman detail dengan nama app/views/artikel/detail.php.
+![ss36](https://user-images.githubusercontent.com/81814954/124261776-651f7780-db5b-11eb-8979-e8e95982282e.JPG)
+
+
+
+# LANGKAH 7
+Membuat Routing Untuk Artikel Detail
+Buka Kembali file app/config/Routes.php, kemudian tambahkan routing untuk artikel detail.
+![ss37](https://user-images.githubusercontent.com/81814954/124262145-dfe89280-db5b-11eb-90be-3078fafb7a48.JPG)
+
+
+Maka akan tampil halaman dari artikel yang di klik.
+
+![ss38](https://user-images.githubusercontent.com/81814954/124262204-f1319f00-db5b-11eb-9f86-7313d1ff5884.JPG)
+
+# LANGKAH 8
+Membuat Menu Admin
+Buat method baru pada Controller Artikel dengan nama admin_index().
+![ss39](https://user-images.githubusercontent.com/81814954/124276483-0dd6d280-db6e-11eb-803f-1585823ee15b.JPG)
+
+
+Kemudian buat view untuk tampilan admin dengan nama admin_index.php.
+![ss40](https://user-images.githubusercontent.com/81814954/124276850-8b9ade00-db6e-11eb-8ee3-319cf7f78c8a.JPG)
+
+
+Tambahkan routing untuk menu admin seperti berikut:
+![ss41](https://user-images.githubusercontent.com/81814954/124276958-ab320680-db6e-11eb-9105-6c0b9443dc43.JPG)
+
+
+Setelah itu buat template header dan footer baru untuk Halaman Admin. Buat file baru dengan nama admin_header.php pada direktori app/view/template
+![ss42](https://user-images.githubusercontent.com/81814954/124277191-f77d4680-db6e-11eb-839e-6a8b8fb573e3.JPG)
+
+
+
+Dan Buat file baru lagi dengan nama admin_footer.php pada direktori app/view/template
+![ss43](https://user-images.githubusercontent.com/81814954/124277391-2eebf300-db6f-11eb-82b7-6fce67f8f12b.JPG)
+
+
+Kemudian buat file baru lagi dengan nama admin.css pada direktori ci4/public untuk mempercantik tampilan Halaman Admin.
+![ss44](https://user-images.githubusercontent.com/81814954/124277543-58a51a00-db6f-11eb-983d-e7f2de9b907f.JPG)
+
+
+![ss45](https://user-images.githubusercontent.com/81814954/124277652-7d998d00-db6f-11eb-8294-58e7b0ab46c8.JPG)
+
+
+![ss46](https://user-images.githubusercontent.com/81814954/124277784-a457c380-db6f-11eb-9665-843c6bcc1b39.JPG)
+
+
+![ss47](https://user-images.githubusercontent.com/81814954/124277878-c0f3fb80-db6f-11eb-8c0b-a37dab0ac91a.JPG)
+
+
+![ss48](https://user-images.githubusercontent.com/81814954/124277916-cb15fa00-db6f-11eb-9451-c2bfd10b4b12.JPG)
+
+
+![ss49](https://user-images.githubusercontent.com/81814954/124278043-f862a800-db6f-11eb-8b07-c5c5ef4e0e62.JPG)
+
+# LANGKAH 9
+Menambahkan Data Artikel
+Tambahkan fungsi/method baru pada Controller Artikel dengan nama add().
+![ss50](https://user-images.githubusercontent.com/81814954/124280227-a1120700-db72-11eb-88cc-312fe8e0cfec.JPG)
+
+
+Kemudian buat view untuk form tambah dengan nama form_add.php
+![ss51](https://user-images.githubusercontent.com/81814954/124280351-c868d400-db72-11eb-9920-9426be1dd559.JPG)
+
+
+![ss52](https://user-images.githubusercontent.com/81814954/124280489-ef270a80-db72-11eb-8d4b-0f64b033a35e.JPG)
+
+
+# LANGKAH 10
+Mengubah Data
+Tambahkan fungsi/method baru pada Controller Artikel dengan nama edit().
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
