@@ -261,9 +261,75 @@ Kemudian buat view untuk form tambah dengan nama form_add.php
 ![ss52](https://user-images.githubusercontent.com/81814954/124280489-ef270a80-db72-11eb-8d4b-0f64b033a35e.JPG)
 
 
-# LANGKAH 10
-Mengubah Data
-Tambahkan fungsi/method baru pada Controller Artikel dengan nama edit().
+# Praktikum 13 - Framework Lanjutan (Modul Login)
+
+Pemrograman Web
+Saiful Tazali
+
+311910625
+
+TI.19.C1
+
+
+
+Persiapan
+Untuk memulai membuat modul Login, yang perlu disiapkan adalah database server menggunakan MySQL. Pastikan MySQL Server sudah dapat dijalankan melalui XAMPP.
+
+Kemudian Membuat Tabel: User Login
+![ss60](https://user-images.githubusercontent.com/81814954/124340138-3f3ab700-dbdd-11eb-9060-4cd39f32728f.JPG)
+
+
+
+Selanjutnya adalah membuat Model untuk memproses data Login. Buat file baru pada direktori app/Models dengan nama UserModel.php
+![ss61](https://user-images.githubusercontent.com/81814954/124340283-46ae9000-dbde-11eb-8a55-81fd5853a97c.JPG)
+
+
+# LANGKAH 2
+Membuat Controller User
+Buat Controller baru dengan nama User.php pada direktori app/Controllers. Kemudian tambahkan method index() untuk menampilkan daftar user, dan method login() untuk proses login.
+![ss62](https://user-images.githubusercontent.com/81814954/124340303-60e86e00-dbde-11eb-8168-7a1098c9b003.JPG)
+
+
+# LANGKAH 3
+Membuat View Login
+Buat direktori baru dengan nama user pada direktori app/views, kemudian buat file baru dengan nama login.php.
+![ss63](https://user-images.githubusercontent.com/81814954/124340561-3eefeb00-dbe0-11eb-8337-f3699ea85008.JPG)
+
+
+# LANGKAH 4
+Membuat Database Seeder
+Database seeder digunakan untuk membuat data dummy. Untuk keperluan ujicoba modul login, kita perlu memasukkan data user dan password kedaalam database. Untuk itu buat database seeder untuk tabel user. Buka CLI, kemudian tulis perintah berikut: php spark make:seeder UserSeeder
+![ss64](https://user-images.githubusercontent.com/81814954/124340570-5202bb00-dbe0-11eb-91c9-76398bc6ca9c.JPG)
+
+
+Selanjutnya, buka file UserSeeder.php yang berada di lokasi direktori /app/Database/Seeds/UserSeeder.php kemudian isi dengan kode berikut:
+![ss65](https://user-images.githubusercontent.com/81814954/124341429-7eb9d100-dbe6-11eb-8f49-c36631c5fd3d.JPG)
+
+
+Selanjutnya buka kembali CLI dan ketik perintah berikut: php spark db:seed UserSeeder
+![ss66](https://user-images.githubusercontent.com/81814954/124341515-128b9d00-dbe7-11eb-8bd3-e05c8a541ae4.JPG)
+
+
+Jangan lupa jalankan perintah ini untuk menjalankan ci4 di port 8080. Buka kembali CLI dan ketik perintah berikut: php spark serve
+![ss66](https://user-images.githubusercontent.com/81814954/124341698-6a76d380-dbe8-11eb-9f7f-dd6f91bb7445.JPG)
+
+Tambahkan CSS untuk mempercantikan tampilan login. Buka file style.css pada direktori ci4\public\style.css
+![ss67](https://user-images.githubusercontent.com/81814954/124341784-26d09980-dbe9-11eb-913a-b276c01316d3.JPG)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
