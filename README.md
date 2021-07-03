@@ -317,6 +317,70 @@ Tambahkan CSS untuk mempercantikan tampilan login. Buka file style.css pada dire
 ![ss67](https://user-images.githubusercontent.com/81814954/124341784-26d09980-dbe9-11eb-913a-b276c01316d3.JPG)
 
 
+Uji Coba Login
+Selanjutnya buka url http://localhost:8080/user/login seperti berikut:
+![ss68](https://user-images.githubusercontent.com/81814954/124342770-9302cb80-dbf0-11eb-917d-816ce25473ab.JPG)
+
+
+LANGKAH 5
+Menambahkan Auth Filter
+Selanjutnya membuat filer untuk halaman admin. Buat file baru dengan nama Auth.php pada direktori app/Filters.
+![ss69](https://user-images.githubusercontent.com/81814954/124353225-776ae580-dc2f-11eb-92c7-aec8d832eea6.JPG)
+
+
+Selanjutnya buka file app/Config/Filters.php tambahkan kode berikut: 'auth' => App\Filters\Auth::class
+![ss70](https://user-images.githubusercontent.com/81814954/124353244-9b2e2b80-dc2f-11eb-8ed6-d5934d9aaa15.JPG)
+
+
+Selanjutnya buka file app/Config/Routes.php dan sesuaikan kodenya.
+![ss71](https://user-images.githubusercontent.com/81814954/124353351-23accc00-dc30-11eb-9227-b9f9f727c7a9.JPG)
+
+
+# LANGKAH 6
+Fungsi Logout
+Tambahkan method logout pada Controller User seperti berikut:
+![ss72](https://user-images.githubusercontent.com/81814954/124353408-8e5e0780-dc30-11eb-9fcc-eef9ee6eb7f8.JPG)
+
+
+Tambahkan menu logout di header admin. Ke direktori app\view\template lalu buka file admin_header.php tambahkan kode berikut
+
+<a href="<?= base_url('/admin/logout');?>">Logout</a>
+![ss73](https://user-images.githubusercontent.com/81814954/124353469-e85ecd00-dc30-11eb-885f-175f2046a693.JPG)
+
+
+Tambahkan route logout dengan cara ke direktori app\Config\Routes.php lalu tambahkan kode berikut
+
+$routes->add('logout', 'User::logout');
+![ss74](https://user-images.githubusercontent.com/81814954/124353507-1e9c4c80-dc31-11eb-9f16-6c9ba5a2d973.JPG)
+
+
+ANGKAH 7
+Percobaan Akses Menu Admin
+Buka url dengan alamat http://localhost:8080/admin/artikel ketika alamat tersebut diakses maka, akan dimuculkan halaman login.
+![ss75](https://user-images.githubusercontent.com/81814954/124353557-691dc900-dc31-11eb-9047-0b3e8c654f8f.JPG)
+
+
+![ss76](https://user-images.githubusercontent.com/81814954/124353564-72a73100-dc31-11eb-9f59-c1cfdfc5192b.JPG)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
