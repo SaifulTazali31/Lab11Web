@@ -362,6 +362,68 @@ Buka url dengan alamat http://localhost:8080/admin/artikel ketika alamat tersebu
 
 ![ss76](https://user-images.githubusercontent.com/81814954/124353564-72a73100-dc31-11eb-9f59-c1cfdfc5192b.JPG)
 
+Praktikum 14 - Pagination dan Pencarian
+
+Pemrograman Web
+
+Saiful tazali
+
+311910625
+
+TI.19.C1
+
+LANGKAH 1
+Membuat Pagination
+Pagination merupakan proses yang digunakan untuk membatasi tampilan yang panjang dari data yang banyak pada sebuah website. Fungsi pagination adalah memecah tampilan menjadi beberapa halaman tergantung banyaknya data yang akan ditampilkan pada setiap halaman. Pada Codeigniter 4, fungsi pagination sudah tersedia pada Library sehingga cukup mudah menggunakannya. Untuk membuat pagination, buka Kembali Controller Artikel - htdocs\lab11_ci\ci4\Controllers\Artikel.php, kemudian modifikasi kode pada method admin_index seperti berikut.
+
+![ss81](https://user-images.githubusercontent.com/81814954/125155282-e349d280-e188-11eb-9c85-29202cee9b20.JPG)
+
+
+Kemudian buka file views/artikel/admin_index.php dan tambahkan kode berikut dibawah deklarasi tabel data.
+![ss82](https://user-images.githubusercontent.com/81814954/125155329-3a4fa780-e189-11eb-8748-14529062e59b.JPG)
+
+
+Selanjutnya buka kembali menu daftar artikel, tambahkan data lagi untuk melihat hasilnya.
+![ss83](https://user-images.githubusercontent.com/81814954/125155341-505d6800-e189-11eb-9164-ea2ea1ef85a7.JPG)
+
+
+LANGKAH 2
+Membuat Pencarian
+Pencarian data digunakan untuk memfilter data. Untuk membuat pencarian data, buka kembali Controller Artikel - htdocs\lab11_ci\ci4\Controllers\Artikel.php, pada method admin_index ubah kodenya seperti berikut
+![ss84](https://user-images.githubusercontent.com/81814954/125155578-2b69f480-e18b-11eb-806f-1749e0a7edb8.JPG)
+
+
+\Kemudian buka kembali file views/artikel/admin_index.php dan tambahkan form pencarian sebelum deklarasi tabel seperti berikut:
+![ss85](https://user-images.githubusercontent.com/81814954/125155593-43da0f00-e18b-11eb-9fd7-6dc544d47203.JPG)
+
+
+Dan pada link pager ubah seperti berikut.
+![ss86](https://user-images.githubusercontent.com/81814954/125155623-58b6a280-e18b-11eb-8987-adf8808e7dbf.JPG)
+
+
+![ss87](https://user-images.githubusercontent.com/81814954/125155643-6e2bcc80-e18b-11eb-8b4a-5a9b475d88b1.JPG)
+
+LANGKAH 3
+Upload Gambar
+Menambahkan fungsi unggah gambar pada tambah artikel. Buka kembali Controller Artikel - htdocs\lab11_ci\ci4\Controllers\Artikel.php, sesuaikan kode pada method add seperti berikut:
+![ss88](https://user-images.githubusercontent.com/81814954/125156194-7f2a0d00-e18e-11eb-863e-7ff7b1de1b0f.JPG)
+
+
+![ss89](https://user-images.githubusercontent.com/81814954/125156264-cfa16a80-e18e-11eb-95f3-c16a51929d05.JPG)
+
+
+![ss90](https://user-images.githubusercontent.com/81814954/125156276-daf49600-e18e-11eb-8a91-39afd2cf6566.JPG)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
